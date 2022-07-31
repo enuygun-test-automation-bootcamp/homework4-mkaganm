@@ -35,7 +35,7 @@ public class petStoreTest_Unirest {
                         .asString();
 
         // * check status
-        Assertions.assertEquals(response.getStatus(), 200);
+        Assertions.assertEquals(200,response.getStatus());
     }
 
     // * testing post order  api
@@ -51,7 +51,7 @@ public class petStoreTest_Unirest {
                 .asString();
 
         // * check status
-        Assertions.assertEquals(response.getStatus(), 200);
+        Assertions.assertEquals(200,response.getStatus());
     }
 
     // * testing get order api
@@ -65,7 +65,7 @@ public class petStoreTest_Unirest {
                 .asString();
 
         // * check status
-        Assertions.assertEquals(response.getStatus(), 200);
+        Assertions.assertEquals(200,response.getStatus());
     }
 
     // * testing delete order api
@@ -79,7 +79,7 @@ public class petStoreTest_Unirest {
                 .asString();
 
         // * check status
-        Assertions.assertEquals(response.getStatus(), 200);
+        Assertions.assertEquals(200,response.getStatus());
     }
 
     // * testing delete order api (but not exist order)
@@ -93,7 +93,7 @@ public class petStoreTest_Unirest {
                 .asString();
 
         // * check status
-        Assertions.assertEquals(response.getStatus(), 404);
+        Assertions.assertEquals(404,response.getStatus());
     }
 
     // * testing get order api (but not exist order)
@@ -107,6 +107,6 @@ public class petStoreTest_Unirest {
                 .asString();
 
         // * check status
-        Assertions.assertEquals(response.getStatus(), 404);
+        Assertions.assertEquals(404,response.getStatus());
     }
 }
